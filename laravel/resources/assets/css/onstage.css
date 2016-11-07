@@ -1,0 +1,205 @@
+.avatar_div{width:100px;margin: 5px auto;/*头像水平居中*/}
+.avatar-top { margin-top: 80px; -webkit-transition: 800ms ease; -moz-transition: 800ms ease; -o-transition: 800ms ease; transition: 800ms ease; }
+.avatar{width:100px ! important;height:100px ! important;-webkit-transition: 0.4s;         
+	-webkit-transition: -webkit-transform 0.4s ease-out;     
+	transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360度）*/     
+	-moz-transition: -moz-transform 0.4s ease-out;}
+.avatar:hover{/*设置鼠标悬浮在头像时的CSS样式*/     
+	transform: rotateZ(360deg);/*图像旋转360度*/     
+	-webkit-transform: rotateZ(360deg);     
+	-moz-transform: rotateZ(360deg); }   
+.am-input-group{width:30%;margin: 5px auto;}
+.login{width:130px;margin: 5px auto;}
+.loging{display: none;}
+.am-modal{z-index: 9999;}
+/*form表单样式*/
+.login_form{
+	z-index: 999;
+	position:absolute;
+	  overflow: auto;
+	   -webkit-transform: translate(0,35%);
+	      -ms-transform: translate(0,35%);
+	          transform: translate(0,35%);
+          }
+/*图片轮换淡入淡出*/          
+#supersized{position:fixed;}
+#supersized .supersize{ -ms-interpolation-mode: bicubic; }
+#supersized .supersize, #supersized a{
+	    height:100%;
+	    width:100%;
+	    position:absolute;
+	    z-index: -1;
+	}
+#supersized .prevslide, #supersized .prevslide img{
+	    z-index: 1;
+	}
+#supersized .activeslide, #supersized .activeslide img{
+	    z-index: 2;
+	}	
+body{overflow: hidden;}	
+div.bgSelector div#bgColorSelector #bscParent #bscDrop {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+div.bgSelector div#bgColorSelector #bscParent #bscDrag {
+    float: left;
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+}
+div.bgSelector div#bgColorSelector #bscParent #bscDrop td span {
+    display: block;
+    width: 100%;
+}
+div.bgSelector div#bgColorSelector #bscParent #bscDrag img {
+    cursor: ew-resize;
+    height: 35px;
+    position: relative;
+    width: 47px;
+    z-index: -1;
+}
+div.bgSelector div#bgColorSelector #bscParent #bscDrag {
+    float: left;
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+}
+div.bgSelector div#bgColorSelector #bscParent {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 9998;
+}
+div.bgSelector div#bgColorSelector {
+    overflow: hidden;
+    width: 100%;
+}
+div.bgSelector {
+    display: none;
+    text-align: left;
+    width: 100%;
+}
+.am-topbar .am-text-ir {
+  display: block;
+  margin-right: 10px;
+  height: 50px;
+  width: 125px;
+  background: url(../img/zizu.png) no-repeat left center;
+  -webkit-background-size: 125px 24px;
+  background-size: 125px 24px;
+}
+.login_user_avatar{
+	margin-top:5px;
+	width:40px;
+	height: 40px;
+}
+.user_info{
+	height: 32px;
+	margin-top: 5px;
+	margin-bottom: 0px ! important;
+	display: block;
+}
+.username,.role{
+
+    line-height: 16px;
+    text-align: right;
+    font-size: 12px;
+}
+.am-btn-info{
+	 -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.3s ease-out 0s, border-color 0.3s ease-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+#alter_userinfo{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-top: 0 ! important;
+	margin-left: 0 ! important;
+}
+.list_toggle{
+	height: 50px;
+	line-height: 50px;
+	margin-top: 0 ! important;
+	display: block;
+	padding-top: 0 ! important;
+	padding-left: 18.5px ! important;
+	padding-right: 18.5px ! important;
+}
+.list_change{
+	padding: 0 0;
+}
+.left-sidebar{
+	left: 0;
+    min-height: 100%;
+    /* padding-top: 57px; */
+    position: absolute;
+    top: 50px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 240px;
+    z-index: 1104;
+    background: #333 none repeat scroll 0 0;
+    bottom: 0;
+    max-width: 100%;
+    overflow-y: auto;
+   /*  position: fixed; */
+	line-height: 1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
+	display: block;
+    float: left;
+    height: auto;
+	list-style: outside none none;
+	background: #E7E5E6;
+}
+.left-sidebar.active {
+    /* left: -240px; */
+    transform: translateX(0px);
+    color: #fff;
+}
+.menu_title{
+	height: 44px;
+	/* border-top: 1px solid rgba(255, 255, 255, 255); */ 
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 255) inset;
+}
+.zizhu_title{
+    width:240px;
+    border: 1px solid white;
+    text-align: center;
+}
+.am-menu-sub li{
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+/* #godesktop{
+	color: #fff;
+    display: inline-block;
+    transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+
+}
+#godesktop{
+	    background: #ff5656 url("chrome://global/skin/media/imagedoc-darknoise.png") no-repeat scroll -500px 0;
+}
+#godesktop:hover{
+	background-position: 0 0;
+	color: #fff;
+} */
+
+

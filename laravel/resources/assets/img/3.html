@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style>
+body,ul,li{padding:0; margin:0;font-family:Verdana, Geneva, sans-serif;}
+.box{ width:100px; height:16px; border:#060 1px solid; position:relative;}
+.box{background:url(2.jpg) no-repeat top right; cursor:pointer;}
+ul{ list-style:none; position:absolute; top:17px; width:100px; border-left:#060 1px solid;border-right:#060 1px solid;border-bottom:#060 1px solid; text-align:center;}
+li{background:#F2FCF1; margin-top:1px;}
+.show{ display:none;}
+a{font-size:12px;}
+</style>
+</head>
+
+<body>
+
+<div class="box" onclick="showmenu()" id="div_select"></div>
+<ul id="li_show" class="show">
+<li><a href="javascript:void(0)" onclick="selectThis('home')">home</a></li>
+<li><a href="javascript:void(0)" onclick="selectThis('article')">article</a></li>
+<li><a href="javascript:void(0)" onclick="selectThis('about')">about</a></li>
+</ul>
+
+
+
+<script>
+var $ = document.getElementById("li_show");
+
+function selectThis(value){
+document.getElementById("div_select").innerHTML=value;
+$.style.display = 'none';
+}
+
+function showmenu(){
+  $.style.display = 'block';
+}
+</script>
+</body>
+</html>

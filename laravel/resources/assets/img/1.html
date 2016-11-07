@@ -1,0 +1,33 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+    <html xmlns="http://www.w3.org/1999/xhtml">  
+      
+    <head>  
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />  
+    <title>CSS Borders DIV大图片右上角叠加小图片</title>  
+    <meta name="author" content="Geovin Du 涂聚文"/>  
+    <style type="text/css">  
+    .geovindu  
+    {  
+        width:415px;  
+        height:415px;  
+        border:2px solid;  
+        filter:progid:dXImageTransform.Microsoft.DropShadow(color=#cccccc,offX=5,offY=5,positives=true);   
+        border-radius:25px;  
+        box-shadow: 10px 10px 5px #888888;/*IE 無效*/  
+        border-image:url(3.png) 30 30 round;  
+        -moz-border-image:url(3.png) 30 30 round; /* Firefox */  
+        -webkit-border-image:url(3.png) 30 30 round; /* Safari and Chrome */  
+        -o-border-image:url(3.png) 30 30 round; /* Opera */  
+    }  
+    </style>  
+    </head>  
+      
+    <body>  
+    <div style="width:215px;height:215px;position: relative;border:0px;">  
+    <div style="width:49px;height:45px;position:absolute;top:5px; right:10px; border:0px; "><img src="1.png" style="border:0px;" alt="hi"/></div>  
+    <img src="2.jpg" style="border:0px;" alt="hi,how are you"/>  
+    </div>  
+    <div class="geovindu"></div>  
+    </body>  
+      
+    </html>  
