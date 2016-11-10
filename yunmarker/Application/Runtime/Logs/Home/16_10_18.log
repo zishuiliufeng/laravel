@@ -1,0 +1,13 @@
+[ 2016-10-18T14:42:13+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=js%E9%94%AE%E5%80%BC%E5%AF%B9%E6%95%B0%E7%BB%84&url=https%3A%2F%2Fsegmentfault.com%2Fq%2F1010000006692517%3F_ea%3D1098903&classification_id=1&_=1476772924094
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.060648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013944s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:1.7217s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('js键值对数组','https://segmentfault.com/q/1010000006692517?_ea=1098903','https://sf-static.b0.upaiyun.com/v-5803ab99/global/img/favicon.ico',NULL,'1','2016-10-18 14:42:13') [ RunTime:0.5791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027256s ]
+

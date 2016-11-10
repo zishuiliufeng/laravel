@@ -1,0 +1,16 @@
+[ 2016-07-21T11:40:57+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=&url=https%3A%2F%2Fgithub.com%2Fphp-curl-class%2Fphp-curl-class&classification_id=1&_=1469072427708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.076005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012000s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.4310s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('GitHub - php-curl-class/php-curl-class: PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs','https://github.com/php-curl-class/php-curl-class','http://su.bdimg.com/icon/6000.png',NULL,'1','2016-07-21 11:40:56') [ RunTime:0.1480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026002s ]
+

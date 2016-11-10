@@ -1,0 +1,46 @@
+[ 2016-09-19T11:17:15+08:00 ] ::1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.036569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036955s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.297576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.298053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.042382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.527652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.527887s ]
+
+[ 2016-09-19T11:17:17+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002313s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.2275s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2016-09-19T14:57:39+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.069582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013419s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.1335s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025077s ]
+

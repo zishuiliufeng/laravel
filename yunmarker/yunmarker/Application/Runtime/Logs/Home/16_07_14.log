@@ -1,0 +1,26 @@
+[ 2016-07-14T17:12:02+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97&url=http%3A%2F%2F192.168.1.186%2Fsvn%2Fworklog%2F%25e5%25b7%25a5%25e4%25bd%259c%25e6%2597%25a5%25e5%25bf%2597%2F%25e7%25a0%2594%25e5%258f%2591%25e4%25b8%25ad%25e5%25bf%2583%25ef%25bc%2588%25e6%2588%2590%25e9%2583%25bd%25ef%25bc%2589%2F&classification_id=2&_=1468487518498
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.051003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+NOTIC: [2] file_get_contents(http://192.168.1.186/svn/worklog/%e5%b7%a5%e4%bd%9c%e6%97%a5%e5%bf%97/%e7%a0%94%e5%8f%91%e4%b8%ad%e5%bf%83%ef%bc%88%e6%88%90%e9%83%bd%ef%bc%89/): failed to open stream: HTTP request failed! HTTP/1.1 401 Authorization Required
+ E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\simple_html_dom.php 第 76 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.043003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.043003s ]
+
+[ 2016-07-14T17:12:48+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97&url=http%3A%2F%2F192.168.1.186%2Fsvn%2Fworklog%2F&classification_id=2&_=1468487568666
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] file_get_contents(http://192.168.1.186/svn/worklog/): failed to open stream: HTTP request failed! HTTP/1.1 401 Authorization Required
+ E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\simple_html_dom.php 第 76 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

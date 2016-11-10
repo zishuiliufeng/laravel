@@ -1,0 +1,93 @@
+[ 2016-07-08T14:08:53+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.087005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.6880s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=1 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.288016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.289016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.060004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.061004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.050003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.050003s ]
+
+[ 2016-07-08T14:09:09+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Fjsrun.net%2Fsquare&classification_id=1&_=1467958148422
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0070s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('项目广场- JSRun javascript在线编辑器，支持scss编译 - jQuery, Angular, Backbone, Underscore, Knockout, YUI','http://jsrun.net/square','http://su.bdimg.com/icon/6000.png',NULL,'1','2016-07-08 14:09:09') [ RunTime:0.1740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-08T14:56:44+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.040000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.040000s ]
+
+[ 2016-07-08T14:56:46+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.8200s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-07-08T14:56:48+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=2 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

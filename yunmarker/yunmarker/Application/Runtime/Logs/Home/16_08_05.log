@@ -1,0 +1,511 @@
+[ 2016-08-05T10:40:05+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.088933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011944s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.3694s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030443s ]
+
+[ 2016-08-05T10:45:07+08:00 ] ::1 /yunmarker/index.php/Home/Yun/NewClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.0048s ]
+SQL: INSERT INTO `classification` (`img`,`name`,`create_time`) VALUES ('/yunmarker/client/uploads/img/1470365106.png','测试','2016-08-05 10:45:06') [ RunTime:0.9879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2016-08-05T10:45:22+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0451s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.1869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.510933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.511231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.058964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002531s ]
+
+[ 2016-08-05T10:50:24+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-08-05T10:50:24+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Flocalhost%3A8080%2Fyunmarker%2Findex.php%2FHome%2FYun%2FShowAll%3Fclassification_id%3D3&classification_id=3&_=1470365423855
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0052s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('云书签','http://localhost:8080/yunmarker/index.php/Home/Yun/ShowAll?classification_id=3','http://su.bdimg.com/icon/6000.png',NULL,'3','2016-08-05 10:50:24') [ RunTime:0.0656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001790s ]
+
+[ 2016-08-05T10:50:27+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Del?marker_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0050s ]
+SQL: DELETE FROM `yunmarker` WHERE `marker_id` = 5 [ RunTime:0.1706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2016-08-05T10:50:27+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2016-08-05T10:50:41+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Fu.dev.anoah.com%2Fcehua%2F2016%25e4%25ba%25a7%25e5%2593%2581%25e7%25ad%2596%25e5%2588%2592%25e5%25b7%25a5%25e4%25bd%259c-yxq%2F%25e7%2594%25b5%25e5%25ad%2590%25e4%25b9%25a6%25e5%258c%25855.5%2F%25e8%25b5%2584%25e6%25ba%2590%25e8%25bf%2590%25e8%2590%25a5%2F%25e8%25af%2584%25e5%25ae%25a1%25e9%2580%259a%25e8%25bf%2587%25e6%2596%25b9%25e6%25a1%2588%2F%25e7%25a7%25af%25e5%2588%2586%25e7%25ae%25a1%25e7%2590%2586%25e5%25b7%25a5%25e5%2585%25b7%2F%25e7%2594%25b5%25e5%25ad%2590%25e4%25b9%25a6%25e5%258c%2585%25e7%25a7%25af%25e5%2588%2586%25e5%2590%258e%25e5%258f%25b0%2520-%25e7%25a7%25af%25e5%2588%2586%25e4%25ba%258b%25e9%25a1%25b9%25e3%2580%2581%25e7%25a7%25af%25e5%2588%2586%25e7%25ae%25a1%25e7%2590%2586%2F%23p%3D%25E7%2594%25A8%25E6%2588%25B7%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25A7%25AF%25E5%2588%2586%25E8%25AF%25A6%25E6%2583%2585%25E9%25A1%25B5%25E9%259D%25A2-%25E8%2580%2581%25E5%25B8%2588&classification_id=3&_=1470365441456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0046s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('Untitled Document','http://u.dev.anoah.com/cehua/2016%e4%ba%a7%e5%93%81%e7%ad%96%e5%88%92%e5%b7%a5%e4%bd%9c-yxq/%e7%94%b5%e5%ad%90%e4%b9%a6%e5%8c%855.5/%e8%b5%84%e6%ba%90%e8%bf%90%e8%90%a5/%e8%af%84%e5%ae%a1%e9%80%9a%e8%bf%87%e6%96%b9%e6%a1%88/%e7%a7%af%e5%88%86%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7/%e7%94%b5%e5%ad%90%e4%b9%a6%e5%8c%85%e7%a7%af%e5%88%86%e5%90%8e%e5%8f%b0%20-%e7%a7%af%e5%88%86%e4%ba%8b%e9%a1%b9%e3%80%81%e7%a7%af%e5%88%86%e7%ae%a1%e7%90%86/#p=%E7%94%A8%E6%88%B7%E4%B8%AA%E4%BA%BA%E7%A7%AF%E5%88%86%E8%AF%A6%E6%83%85%E9%A1%B5%E9%9D%A2-%E8%80%81%E5%B8%88','http://su.bdimg.com/icon/6000.png',NULL,'3','2016-08-05 10:50:41') [ RunTime:0.0581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001947s ]
+
+[ 2016-08-05T10:50:44+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Del?marker_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0057s ]
+SQL: DELETE FROM `yunmarker` WHERE `marker_id` = 6 [ RunTime:0.0444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-08-05T10:50:44+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2016-08-05T10:51:06+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Fe.dev.anoah.com%2Fmanage%2Findex.php%3Fr%3Dadmin%2Flogin%2Findex&classification_id=3&_=1470365466062
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0060s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('Noah | 资源后台','http://e.dev.anoah.com/manage/index.php?r=admin/login/index','http://su.bdimg.com/icon/6000.png',NULL,'3','2016-08-05 10:51:06') [ RunTime:0.0496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-08-05T10:51:08+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Del?marker_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0045s ]
+SQL: DELETE FROM `yunmarker` WHERE `marker_id` = 7 [ RunTime:0.0552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2016-08-05T10:51:08+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-08-05T10:54:59+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2F192.168.0.34%2Fwui%2Fmain.jsp%3FtemplateId%3D1&classification_id=3&_=1470365699268
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 64 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0085s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES (NULL,'http://192.168.0.34/wui/main.jsp?templateId=1','/yunmarker/client/uploads/img/icon.jpg',NULL,'3','2016-08-05 10:54:59') [ RunTime:0.0380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2016-08-05T10:55:53+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Del?marker_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0152s ]
+SQL: DELETE FROM `yunmarker` WHERE `marker_id` = 8 [ RunTime:0.0556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-08-05T10:55:54+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-08-05T10:56:05+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Fe.dev.anoah.com%2Fapi%2F%3Fq%3Djson%2Febag%2Fuser%2Fscore%2FuserSchoolClassRank%26info%3D%7B%2522class_id%2522%3A1100658%7D&classification_id=3&_=1470365765220
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 64 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0043s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES (NULL,'http://e.dev.anoah.com/api/?q=json/ebag/user/score/userSchoolClassRank&info={%22class_id%22:1100658}','/yunmarker/client/assets/img/icon.jpg',NULL,'3','2016-08-05 10:56:05') [ RunTime:0.0409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-08-05T10:56:08+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Del?marker_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0050s ]
+SQL: DELETE FROM `yunmarker` WHERE `marker_id` = 9 [ RunTime:0.0263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2016-08-05T10:56:08+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=3 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2016-08-05T10:56:37+08:00 ] ::1 /yunmarker/index.php/Home/Yun/Add?title=&url=https%3A%2F%2Fgithub.com%2Fphp-curl-class%2Fphp-curl-class&classification_id=3&_=1470365790771
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0045s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('GitHub - php-curl-class/php-curl-class: PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs','https://github.com/php-curl-class/php-curl-class','/yunmarker/client/assets/img/icon.jpg',NULL,'3','2016-08-05 10:56:37') [ RunTime:0.0611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-08-05T10:56:53+08:00 ] ::1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2016-08-05T10:56:53+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2016-08-05T11:28:23+08:00 ] ::1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026007s ]
+
+[ 2016-08-05T11:29:58+08:00 ] ::1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2016-08-05T11:29:58+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2016-08-05T11:30:01+08:00 ] ::1 /yunmarker/index.php/Home/Yun/DeleteClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003291s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `classification` WHERE ( classification_id=3 ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0378s ]
+SQL: DELETE FROM `yunmarker` WHERE `classification_id` = 3 [ RunTime:0.0006s ]
+SQL: DELETE FROM `classification` WHERE `classification_id` = 3 [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2016-08-05T11:30:03+08:00 ] ::1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003631s ]
+
+[ 2016-08-05T11:30:04+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2016-08-05T17:35:36+08:00 ] ::1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.036104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033616s ]
+
+[ 2016-08-05T17:35:40+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002757s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.1597s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+

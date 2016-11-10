@@ -1,0 +1,173 @@
+[ 2016-07-04T08:52:20+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5NDIzNzY1OQ%3D%3D%26mid%3D2735610101%26idx%3D1%26sn%3D18e95923845bfacce68e4fe7f324c76d%26scene%3D23%26srcid%3D0701ZyK1gaWH40OJ6Q125Iy0%23rd&classification_id=1&_=1467593538598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.056003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012000s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.1740s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('前端工程师面试题汇总','http://mp.weixin.qq.com/s?__biz=MzA5NDIzNzY1OQ==&mid=2735610101&idx=1&sn=18e95923845bfacce68e4fe7f324c76d&scene=23&srcid=0701ZyK1gaWH40OJ6Q125Iy0#rd','http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico',NULL,'1','2016-07-04 08:52:20') [ RunTime:0.0610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027001s ]
+
+[ 2016-07-04T16:29:58+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.098005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.037002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.6060s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=1 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.1180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.306017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.306017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.059004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.050003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.050003s ]
+
+[ 2016-07-04T16:30:02+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-04T16:30:03+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowClassification
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `classification` [ RunTime:0.3590s ]
+SQL: SELECT * FROM `classification` ORDER BY update_time desc,create_time desc  [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-04T16:30:05+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=2 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-04T16:30:10+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=&url=http%3A%2F%2Fnote.youdao.com%2Fshare%2F%3Fid%3Dd4e8092b6f69d19f6c785fd1c243727b%26type%3Dnote%23%2F&classification_id=2&_=1467621009984
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0080s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('','http://note.youdao.com/share/?id=d4e8092b6f69d19f6c785fd1c243727b&type=note#/','http://su.bdimg.com/icon/6000.png',NULL,'2','2016-07-04 16:30:10') [ RunTime:0.2310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-07-04T16:30:28+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Alter?marker_id=16&title=%E7%94%B5%E5%AD%90%E4%B9%A6%E5%8C%85%E7%BB%93%E5%90%88%E7%A6%85%E9%81%93%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B&href=http%3A%2F%2Fnote.youdao.com%2Fshare%2F%3Fid%3Dd4e8092b6f69d19f6c785fd1c243727b%26type%3Dnote%23%2F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0050s ]
+SQL: UPDATE `yunmarker` SET `title`='电子书包结合禅道项目管理系统的工作流程',`href`='http://note.youdao.com/share/?id=d4e8092b6f69d19f6c785fd1c243727b&type=note#/',`update_time`='2016-07-04 16:30:27' WHERE `marker_id` = 16 [ RunTime:0.1930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-07-04T16:30:28+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=2 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-04T16:30:51+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E8%80%85%E5%8A%9F%E8%83%BDbug&url=http%3A%2F%2Fnote.youdao.com%2Fshare%2F%3Fid%3De6b7fa94a1ac381e2d5bb57b6d598459%26type%3Dnote%23%2F&classification_id=2&_=1467621050988
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0120s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('我是管理者功能bug','http://note.youdao.com/share/?id=e6b7fa94a1ac381e2d5bb57b6d598459&type=note#/','http://su.bdimg.com/icon/6000.png',NULL,'2','2016-07-04 16:30:51') [ RunTime:0.0540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-04T16:31:22+08:00 ] 127.0.0.1 /yunmarker/index.php/Home/Yun/Add?title=%E7%94%B5%E5%AD%90%E4%B9%A6%E5%8C%85-%E7%8F%AD%E7%BA%A7%E7%AE%A1%E7%90%86%E7%AD%96%E5%88%92&url=http%3A%2F%2Fu.dev.anoah.com%2Fcehua%2F01%25e4%25ba%25a7%25e5%2593%2581%25e6%25b1%2587%25e6%2580%25bb%2F%25e7%258f%25ad%25e7%25ba%25a7%25e7%25ae%25a1%25e7%2590%2586%2F3-%25e5%258e%259f%25e5%259e%258b%25e8%25ae%25be%25e8%25ae%25a1%2F%25e7%258f%25ad%25e7%25ba%25a7%25e7%25ae%25a1%25e7%2590%258620150804V1.0%2F%23p%3D%25E8%2580%2581%25E5%25B8%2588%25E6%259D%2583%25E9%2599%2590%25E6%258E%25A7%25E5%2588%25B6%25E8%25A1%25A8&classification_id=2&_=1467621082662
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.010000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 71 行.
+NOTIC: [8] Undefined index: icon E:\interface\dev-yii\www\yunmarker\Application\Home\Controller\YunController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0000s ]
+SQL: INSERT INTO `yunmarker` (`title`,`href`,`icon`,`marker_id`,`classification_id`,`create_time`) VALUES ('电子书包-班级管理策划','http://u.dev.anoah.com/cehua/01%e4%ba%a7%e5%93%81%e6%b1%87%e6%80%bb/%e7%8f%ad%e7%ba%a7%e7%ae%a1%e7%90%86/3-%e5%8e%9f%e5%9e%8b%e8%ae%be%e8%ae%a1/%e7%8f%ad%e7%ba%a7%e7%ae%a1%e7%90%8620150804V1.0/#p=%E8%80%81%E5%B8%88%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E8%A1%A8','http://su.bdimg.com/icon/6000.png',NULL,'2','2016-07-04 16:31:22') [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

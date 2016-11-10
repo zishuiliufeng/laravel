@@ -1,0 +1,22 @@
+[ 2016-09-23T08:57:54+08:00 ] ::1 /yunmarker/index.php/Home/Yun/ShowAll?classification_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006619s ]
+SQL: SHOW COLUMNS FROM `yunmarker` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `yunmarker` WHERE ( classification_id=1 ) ORDER BY update_time desc,create_time desc  [ RunTime:0.0552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033938s ]
+
