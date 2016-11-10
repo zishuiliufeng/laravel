@@ -363,9 +363,11 @@ $('.sidebar-nav-sub-title').on('click', function() {
         .end()
         .find('.sidebar-nav-sub-ico').toggleClass('sidebar-nav-sub-ico-rotate');
 })
-
+var Hammer = $.AMUI.Hammer;
+var LOGIN_URL = 'login.com';
+var SIGN_UP_URL = 'sign_up.com';
 //登录
-$('.tpl-login-btn').on('click',function(){
+$('.login').on('click',function(){
     var user = $('#user-name').val();
     var password = $('#user-password').val();
     if(user.length>0 && password.length>0)
@@ -382,6 +384,7 @@ $('.tpl-login-btn').on('click',function(){
             success : function(res){
                 if(res.status==1)
                 {
+                    cookie.set("zizhu",user);
                     location.href = res.data;
                 }else{
                     alert(res.msg);
@@ -427,4 +430,75 @@ function cookieTime()
 end = new Date();
 end = new Date(end.valueOf() + 7*24*60*60*1000);
 return end;
+}
+
+//是否同意注册协议
+$('#user-agree').on('change',function(){
+    if($('#user-agree').prop('checked'))
+    {   
+        $('.sign-up').removeAttr('disabled');
+    }else{
+        $('.sign-up').attr('disabled','disabled');
+    }
+})
+
+//注册
+$('.sign-up').on('click',function(){
+    var email = $('#email').val();
+    var name = $('#name').val();
+    var password = $('#password').val();
+    var repassword = $('#repassword').val();
+
+    if(email.length==0){
+        alert('请填写有效邮箱!');
+        return false;
+    }
+    if(name.length==0){
+        alert('请填写登录名');
+        return false;
+    }
+    if(password.length==0 || repassword.length==0){
+        alert('请填写密码');
+        return false;
+    }
+    if(password != repassword)
+    {
+        alert('两次密码不一致');
+        return false;
+    }
+
+    $.ajax({
+        url : SIGN_UP_URL,
+        type : 'POST',
+        dataType : 'json',
+        cache : false,
+        data : {
+            email : email,
+            name : name,
+            password : password,
+            repassword : repassword
+        },
+        success : function(res){
+            if(res.status==1)
+            {
+                location.href = res.data;
+            }else{
+                alert(res.msg);
+            }
+        }
+    }) 
+})
+//退出登录
+$('.login_out').on('click',function(){
+    cookie.unset('zizhu');
+    location.href="login.html";
+})   
+//如果没有登录，则跳转到登录页
+function checkLogin(){
+    if(!cookie.get('zizhu'))
+    {
+        location.href="login.html";
+    }else{
+        $('.user_name').html(cookie.get('zizhu'));
+    }
 }

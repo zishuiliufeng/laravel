@@ -729,6 +729,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 }
 .theme-white .tpl-login-logo {
   background: url(../img/zizhu.png) center no-repeat;
+  background-size:100% 100%;
 }
 .theme-white .sub-active {
   color: #23abf0!important;
@@ -1912,3 +1913,11 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
     right: 0;
   }
 }
+.avatar{-webkit-transition: 0.4s;         
+  -webkit-transition: -webkit-transform 0.4s ease-out;     
+  transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360度）*/     
+  -moz-transition: -moz-transform 0.4s ease-out;}
+.avatar:hover{/*设置鼠标悬浮在头像时的CSS样式*/     
+  transform: rotateZ(360deg);/*图像旋转360度*/     
+  -webkit-transform: rotateZ(360deg);     
+  -moz-transform: rotateZ(360deg); }   
